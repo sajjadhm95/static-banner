@@ -1,0 +1,53 @@
+nav {
+    height: 80px;
+    width: 100%;
+    @include flex;
+    background-color: $color1;
+    color: $color5;
+    box-shadow: 0px 10px 12px -1px rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+div.nav-left>ul {
+    @include flex;
+}
+
+div.nav-left>ul>li {
+    font-size: $fontSmall;
+    padding: $paddingTopSide
+}
+
+div.nav-left>ul>li:hover {
+    box-shadow: 2px 10px 12px -1px $color5;
+    color: $color1;
+    background-color: $color5;
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+
+nav>h1 {
+    font-size: $fontMedium;
+    text-align: center
+}
+
+div.nav-right>ul {
+    @include flex;
+
+}
+
+div.nav-right>ul>li {
+    font-size: $fontSmall;
+    padding: $paddingTopSide
+}
+
+div.nav-right>ul>li:hover {
+    box-shadow: 2px 10px 12px -1px $color5;
+    color: $color1;
+    background-color: $color5;
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+
+/* .........................Header-top...................... */
